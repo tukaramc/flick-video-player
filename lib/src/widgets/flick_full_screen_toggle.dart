@@ -1,6 +1,7 @@
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:community_material_icon/community_material_icon.dart';
 
 /// Show a widget based on the full-screen state of the player and toggle the same.
 class FlickFullScreenToggle extends StatelessWidget {
@@ -51,13 +52,13 @@ class FlickFullScreenToggle extends StatelessWidget {
         Provider.of<FlickControlManager>(context);
     Widget enterFullScreenWidget = enterFullScreenChild ??
         Icon(
-          Icons.fullscreen,
+          CommunityMaterialIcons.fullscreen,
           size: size,
           color: color,
         );
     Widget exitFullScreenWidget = exitFullScreenChild ??
         Icon(
-          Icons.fullscreen_exit,
+          CommunityMaterialIcons.fullscreen_exit,
           size: size,
           color: color,
         );

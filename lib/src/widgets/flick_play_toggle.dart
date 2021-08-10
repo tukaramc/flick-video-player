@@ -1,6 +1,7 @@
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:community_material_icon/community_material_icon.dart';
 
 /// Show a widget based on play/pause state of the player and toggle the same.
 class FlickPlayToggle extends StatelessWidget {
@@ -61,19 +62,19 @@ class FlickPlayToggle extends StatelessWidget {
 
     Widget playWidget = playChild ??
         Icon(
-          Icons.play_arrow,
+          CommunityMaterialIcons.play,
           size: size,
           color: color,
         );
     Widget pauseWidget = pauseChild ??
         Icon(
-          Icons.pause,
+          CommunityMaterialIcons.pause,
           size: size,
           color: color,
         );
     Widget replayWidget = replayChild ??
         Icon(
-          Icons.replay,
+          CommunityMaterialIcons.replay,
           size: size,
           color: color,
         );

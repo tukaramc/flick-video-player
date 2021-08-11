@@ -1,6 +1,7 @@
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:community_material_icon/community_material_icon.dart';
 
 /// GestureDetector's that calls [flickControlManager.seekForward]/[flickControlManager.seekBackward] onTap of opaque area/child.
 ///
@@ -9,8 +10,8 @@ class FlickSeekVideoAction extends StatelessWidget {
   const FlickSeekVideoAction({
     Key? key,
     this.child,
-    this.forwardSeekIcon = const Icon(Icons.fast_forward),
-    this.backwardSeekIcon = const Icon(Icons.fast_rewind),
+    this.forwardSeekIcon = const Icon(CommunityMaterialIcons.fast_forward),
+    this.backwardSeekIcon = const Icon(CommunityMaterialIcons.rewind),
     this.duration = const Duration(seconds: 10),
     this.seekForward,
     this.seekBackward,

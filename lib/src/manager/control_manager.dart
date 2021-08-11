@@ -45,9 +45,9 @@ class FlickControlManager extends ChangeNotifier {
     //     _notify();
     //   });
     // }
-    // _isFullscreen = false;
-    // _flickManager._handleToggleFullscreen();
-    // _notify();
+    _isFullscreen = false;
+    _flickManager._handleToggleFullscreen();
+    _notify();
   }
 
   /// Toggle full-screen.

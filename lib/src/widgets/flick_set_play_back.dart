@@ -1,6 +1,7 @@
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:community_material_icon/community_material_icon.dart';
 
 /// Show a widget based on the full-screen state of the player and toggle the same.
 class FlickSetPlayBack extends StatelessWidget {
@@ -49,7 +50,7 @@ class FlickSetPlayBack extends StatelessWidget {
         Provider.of<FlickControlManager>(context);
     Widget playBackWidget = playBackChild ??
         Icon(
-          Icons.play_circle_outline_sharp,
+          CommunityMaterialIcons.play_circle_outline,
           size: size,
           color: color,
         );

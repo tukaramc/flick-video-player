@@ -1,7 +1,7 @@
 import 'package:example/utils/mock_data.dart';
 import 'package:example/web_video_player/web_video_control.dart';
 import 'package:flick_video_player/flick_video_player.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 import 'package:video_player/video_player.dart';
 
@@ -23,6 +23,7 @@ class _WebVideoPlayerState extends State<WebVideoPlayer> {
     super.initState();
     flickManager = FlickManager(
       videoPlayerController:
+          // ignore: deprecated_member_use
           VideoPlayerController.network(mockData["items"][1]["trailer_url"]),
     );
     List<String> urls = (mockData["items"] as List)

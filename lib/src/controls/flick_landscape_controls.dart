@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flick_video_player/flick_video_player.dart';
 
 /// Default landscape controls.

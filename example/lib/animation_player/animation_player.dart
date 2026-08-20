@@ -1,7 +1,7 @@
 import 'package:example/animation_player/portrait_video_controls.dart';
 import 'package:example/utils/mock_data.dart';
 import 'package:flick_video_player/flick_video_player.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 import 'package:video_player/video_player.dart';
 
@@ -27,7 +27,7 @@ class _AnimationPlayerState extends State<AnimationPlayer> {
     // String url = items[0]['trailer_url'];
     flickManager = FlickManager(
       videoPlayerController:
-          VideoPlayerController.network(items[0]['trailer_url']),
+          VideoPlayerController.networkUrl(Uri.parse(items[0]['trailer_url'])),
       onVideoEnd: () => dataManager.playNextVideo(
         Duration(seconds: 5),
       ),
@@ -92,7 +92,7 @@ class _AnimationPlayerState extends State<AnimationPlayer> {
                           _pauseOnTap = !value;
                         });
                       },
-                      activeColor: Colors.red,
+                      activeThumbColor: Colors.red,
                       inactiveThumbColor: Colors.blue,
                       inactiveTrackColor: Colors.blue[200],
                     ),

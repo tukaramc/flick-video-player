@@ -1,5 +1,5 @@
 import 'package:flick_video_player/flick_video_player.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:provider/provider.dart';
 
 /// Shows a widget when the video is buffering (and video is playing).

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 typedef Paint GetProgressBarBackgroundPaint({
   double? width,
@@ -31,13 +31,11 @@ typedef Paint GetProgressBarHandlePaint({
 
 class FlickProgressBarSettings {
   FlickProgressBarSettings({
-    this.playedColor: const Color.fromRGBO(255, 255, 255, 1),
-    this.bufferedColor: const Color.fromRGBO(255, 255, 255, 0.38),
-    this.handleColor: const Color.fromRGBO(255, 255, 255, 1),
-    this.backgroundColor: const Color.fromRGBO(255, 255, 255, 0.24),
-    this.padding = const EdgeInsets.symmetric(
-      vertical: 10,
-    ),
+    this.playedColor = const Color.fromRGBO(255, 255, 255, 1),
+    this.bufferedColor = const Color.fromRGBO(255, 255, 255, 0.38),
+    this.handleColor = const Color.fromRGBO(255, 255, 255, 1),
+    this.backgroundColor = const Color.fromRGBO(255, 255, 255, 0.24),
+    this.padding = const EdgeInsets.symmetric(vertical: 10),
     this.height = 3,
     this.handleRadius = 3.3,
     this.curveRadius = 4,

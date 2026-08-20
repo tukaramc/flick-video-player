@@ -4,7 +4,7 @@ import 'package:example/feed_player/feed_player.dart';
 import 'package:example/web_video_player/web_video_player.dart';
 import 'package:flutter/foundation.dart';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 import './landscape_player/landscape_player.dart';
 

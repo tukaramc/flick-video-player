@@ -3,7 +3,7 @@ import 'package:example/feed_player/portrait_controls.dart';
 import './flick_multi_manager.dart';
 import 'package:flick_video_player/flick_video_player.dart';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:visibility_detector/visibility_detector.dart';
 import 'package:video_player/video_player.dart';
 
@@ -29,8 +29,9 @@ class _FlickMultiPlayerState extends State<FlickMultiPlayer> {
   @override
   void initState() {
     flickManager = FlickManager(
-      videoPlayerController: VideoPlayerController.network(widget.url)
-        ..setLooping(true),
+      videoPlayerController:
+          VideoPlayerController.networkUrl(Uri.parse(widget.url))
+            ..setLooping(true),
       autoPlay: false,
     );
     widget.flickMultiManager.init(flickManager);

@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "package_info_plus", path: "../.packages/package_info_plus-10.2.2"),
-        .package(name: "video_player_avfoundation", path: "../.packages/video_player_avfoundation-2.12.0"),
+        .package(name: "video_player_avfoundation", path: "../.packages/video_player_avfoundation-2.12.2"),
         .package(name: "wakelock_plus", path: "../.packages/wakelock_plus-1.8.1"),
         .package(name: "FlutterFramework", path: "../.packages/FlutterFramework")
     ],
